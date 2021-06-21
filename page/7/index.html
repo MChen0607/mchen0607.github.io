@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Hexo"><meta property="og:url" content="http://example.com/"><meta property="og:site_name" content="Hexo"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:author" content="John Doe"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com"},"headline":"Hexo","image":["http://example.com/img/og_image.png"],"author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"http://example.com/img/logo.svg"}},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-16T12:34:33.000Z" title="2021/4/16 下午8:34:33">2021-04-16</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:14.000Z" title="2021/6/8 上午11:29:14">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 307 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/16/20-%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/">剑指 Offer 20. 表示数值的字符串【字符串】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>请实现一个函数用来判断字符串是否表示数值（包括整数和小数）。例如，字符串”+100”、”5e2”、”-123”、”3.1416”、”-1E-16”、”0123”都表示数值，但”12e”、”1a3.14”、”1.2.3”、”+-5”及”12e+5.4”都不是。</p></div><a class="article-more button is-small is-size-7" href="/2021/04/16/20-%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-16T11:36:22.000Z" title="2021/4/16 下午7:36:22">2021-04-16</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:02.000Z" title="2021/6/8 上午11:29:02">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 373 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/16/19-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">剑指offer19 正则表达式</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>请实现一个函数用来匹配包含<code>&#39;.&#39;</code>和<code>’*&#39;</code>的正则表达式。模式中的字符<code>&#39;.&#39;</code>表示任意一个字符，而<code>&#39;*&#39;</code>表示它前面的字符可以出现任意次（含0次）。在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串<code>&quot;aaa&quot;</code>与模式<code>&quot;a.a&quot;</code>和<code>&quot;ab*ac*a&quot;</code>匹配，但与<code>&quot;aa.a&quot;</code>和<code>&quot;ab*a&quot;</code>均不匹配。</p>
+<p><strong>示例 1:</strong></p>
+<blockquote>
+<p>输入:<br>s = “aa”<br>p = “a”<br>输出: false<br>解释: “a” 无法匹配 “aa” 整个字符串。</p>
+</blockquote>
+<p><strong>示例 2:</strong></p>
+<blockquote>
+<p>输入:<br>s = “aa”<br>p = “a*”<br>输出: true<br>解释: 因为 ‘*’ 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 ‘a’。因此，字符串 “aa” 可被视为 ‘a’ 重复了一次。</p>
+</blockquote></div><a class="article-more button is-small is-size-7" href="/2021/04/16/19-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-16T11:28:04.000Z" title="2021/4/16 下午7:28:04">2021-04-16</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:00.000Z" title="2021/6/8 上午11:29:00">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">3 minutes read (About 476 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/16/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/">剑指 Offer 18. 删除链表的节点【快慢指针】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。</p>
+<p>返回删除后的链表的头节点。</p>
+<p><strong>示例 1:</strong></p>
+<blockquote>
+<p>输入: head = [4,5,1,9], val = 5<br>输出: [4,1,9]<br>解释: 给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 1 -&gt; 9.</p>
+</blockquote>
+<p><strong>示例 2:</strong></p>
+<blockquote>
+<p>输入: head = [4,5,1,9], val = 1<br>输出: [4,5,9]<br>解释: 给定你链表中值为 1 的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 5 -&gt; 9.</p>
+</blockquote>
+<p><strong>说明：</strong></p>
+<ul>
+<li>题目保证链表中节点的值互不相同</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/2021/04/16/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-16T11:04:47.000Z" title="2021/4/16 下午7:04:47">2021-04-16</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:28:56.000Z" title="2021/6/8 上午11:28:56">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 245 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/16/17-%E6%89%93%E5%8D%B0%E4%BB%8E1%E5%88%B0%E6%9C%80%E5%A4%A7%E7%9A%84n%E4%BD%8D%E6%95%B0/">剑指 Offer 17. 打印从1到最大的n位数</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入数字 n，按顺序打印出从 1 到最大的 n 位十进制数。比如输入 3，则打印出 1、2、3 一直到最大的 3 位数 999。</p>
+<p><strong>示例 1:</strong></p>
+<blockquote>
+<p>输入: n = 1<br>输出: [1,2,3,4,5,6,7,8,9]</p>
+</blockquote>
+<p><strong>说明：</strong></p>
+<ul>
+<li>用返回一个整数列表来代替打印</li>
+<li>n 为正整数</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/2021/04/16/17-%E6%89%93%E5%8D%B0%E4%BB%8E1%E5%88%B0%E6%9C%80%E5%A4%A7%E7%9A%84n%E4%BD%8D%E6%95%B0/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-15T06:47:35.000Z" title="2021/4/15 下午2:47:35">2021-04-15</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-04-15T07:28:12.000Z" title="2021/4/15 下午3:28:12">2021-04-15</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B0%83%E5%BA%A6/">调度</a></span><span class="level-item">16 minutes read (About 2376 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/15/%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95/">调度</a></h1><div class="content"><h1 id="调度"><a href="#调度" class="headerlink" title="调度"></a>调度</h1><p><strong>调度的意义：</strong></p>
+<p>The objective of scheduling  is to allocate tasks onto the processors and then order their  execution so that task dependence is satisfied and the length  of the schedule, known as the parallel time, is minimized。</p>
+<p><strong>调度算法的可行解：</strong></p>
+<p>Specifically, if the requests for all tasks at their critical instants are fulfilled before  their respective deadlines, then the scheduling algorithm is feasible.</p>
+<p><strong>异构系统：</strong></p>
+<p>Diverse sets of resources interconnected with a high-speed network provide a new computing platform, called <strong>the heterogeneous computing system</strong>, which can support executing computationally intensive parallel and distributed applications.</p>
+<p>与高速网络互连的各种资源集提供了一个称为异构计算系统的新计算平台，该平台可以支持执行计算密集型并行和分布式应用程序。</p>
+<p><strong>任务调度模型：</strong></p>
+<p>A scheduling system model consists of an application, a target computing environment, and a performance criteria for scheduling. </p>
+<p>调度系统模型由应用程序、目标计算环境和调度性能标准组成。</p>
+<p><strong>任务调度的目标函数</strong>：</p>
+<p>The objective function of the task-scheduling problem is to determine the  assignment of tasks of a given application to processors such that its <strong>schedule</strong>  <strong>length is minimized</strong>.</p>
+<h1 id="1-Scheduling-Algorithms-for-Multiprogramming-in-a-Hard-Real-Time-Environment"><a href="#1-Scheduling-Algorithms-for-Multiprogramming-in-a-Hard-Real-Time-Environment" class="headerlink" title="1 Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment"></a>1 Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment</h1><p>Author: <strong>C. L. LIU</strong>  and <strong>JAMES W. LAYLAND</strong> </p>
+<p>JACM     A类   1973年</p>
+<p>题目： <strong>硬实时环境中的多程序调度算法</strong></p>
+<h2 id="优先级调度算法"><a href="#优先级调度算法" class="headerlink" title="优先级调度算法"></a>优先级调度算法</h2><p><strong>静态调度算法</strong>：调度的过程中，优先级不发生改变；即优先级只被赋值一次。</p>
+<p><strong>动态调度算法</strong>：调度的优先级过程中会发生改变，根据不同因素情况动态的修改任务的优先级。</p>
+<p><strong>混合调度算法</strong>：混合静态调度算法和动态算法，即所有任务中，一部分任务的优先级是不改变的，一部分任务的优先级会发生动态改变的。</p>
+<h2 id="论文中的调度算法"><a href="#论文中的调度算法" class="headerlink" title="论文中的调度算法"></a>论文中的调度算法</h2><h2 id="1-A-Fixed-Priority-Scheduling-Algorithm-固定优先级调度算法，静态调度算法。"><a href="#1-A-Fixed-Priority-Scheduling-Algorithm-固定优先级调度算法，静态调度算法。" class="headerlink" title="1 A Fixed Priority Scheduling Algorithm 固定优先级调度算法，静态调度算法。"></a>1 A Fixed Priority Scheduling Algorithm 固定优先级调度算法，静态调度算法。</h2><h3 id="rate-monotonic-priority-assignment-单调速率优先级分配算法"><a href="#rate-monotonic-priority-assignment-单调速率优先级分配算法" class="headerlink" title="rate-monotonic priority assignment  单调速率优先级分配算法"></a>rate-monotonic priority assignment  单调速率优先级分配算法</h3><p>​    根据任务的<strong>请求周期时间T</strong>来进行对任务优先级赋值，当请求周期时间越小，则优先级越大；请求周期时间越大，则任务优先级越小。</p>
+<p>​    调度算法分配优先级过程中没有考虑任务的运行时间。</p>
+<p>​    所有能用静态优先级调度的任务集，都能使用RM算法来对该任务进行调度。</p>
+<p>​    RM调度算法是基于<strong>优先级静态调度算法</strong>中<strong>最优</strong>的调度算法。</p>
+<h2 id="2-The-Deadline-Driven-Scheduling-Algorithm-截止时间驱动调度算法，动态调度算法"><a href="#2-The-Deadline-Driven-Scheduling-Algorithm-截止时间驱动调度算法，动态调度算法" class="headerlink" title="2  The Deadline Driven Scheduling Algorithm 截止时间驱动调度算法，动态调度算法"></a>2  The Deadline Driven Scheduling Algorithm 截止时间驱动调度算法，动态调度算法</h2><p>根据任务执行截止时间来进行对任务的动态赋值优先级；</p>
+<p>当当前时间越接近截止时间时，任务的优先级越高；当当前时间离任务截止时间较远时，任务的优先级越低。</p>
+<p>如果一组任务能用其他调度算法来调度的话，那么Deadline Driven Scheduling Algorithm算法也能进行调度。</p>
+<p>Deadline Driven Scheduling Algorithm算法时最优的。</p>
+<h2 id="3-A-Mixed-Scheduling-Algorithm-混合调度算法"><a href="#3-A-Mixed-Scheduling-Algorithm-混合调度算法" class="headerlink" title="3 A Mixed Scheduling Algorithm 混合调度算法"></a>3 A Mixed Scheduling Algorithm 混合调度算法</h2><p>​    所有任务中请求周期时间比较小的K个任务，采用固定优先级调度算法中rate-monotonic priority Algorithm,RM算法；其他任务采用动态调度算法中的The Deadline Driven Scheduling Algorithm算法。</p>
+<p>​    优优结合。</p>
+<h1 id="2-DSC-Scheduling-Parallel-Tasks-on-an-Unbounded-Number-of-Processors"><a href="#2-DSC-Scheduling-Parallel-Tasks-on-an-Unbounded-Number-of-Processors" class="headerlink" title="2 DSC: Scheduling Parallel Tasks on an Unbounded Number of Processors"></a>2 DSC: Scheduling Parallel Tasks on an Unbounded Number of Processors</h1><p>Author: Tao Yang, and Apostolos  Gerasoulis</p>
+<p>出处：TPDS:“PARALLEL AND DISTRIBUTED SYSTEMS.” A类 1994</p>
+<p>categories: 聚类整合</p>
+<blockquote>
+<p>DSC：在无数个处理器上调度并行任务</p>
+</blockquote>
+<h2 id="2-1-tlevel"><a href="#2-1-tlevel" class="headerlink" title="2.1 tlevel"></a>2.1 tlevel</h2><blockquote>
+<p>定义：从起始结点entry node 到当前结点的最长路径。</p>
+<p>Let $tlevel(n_i)$ be the length of the longest path from an entry (top) node to $n_x$, excluding the weight of $n_x$ in a DAG. 不包括自己的执行时间。</p>
+</blockquote>
+<h2 id="2-2-blevel"><a href="#2-2-blevel" class="headerlink" title="2.2 blevel"></a>2.2 blevel</h2><blockquote>
+<p>定义：从当前结点到exit node的最长时间。</p>
+<p>let $blevel(n_x)$ be the length of the longest path from $n_x$, to an exit (bottom) node.</p>
+<p>包括当前结点的执行时间。</p>
+</blockquote>
+<h2 id="2-3-PT"><a href="#2-3-PT" class="headerlink" title="2.3 PT"></a>2.3 PT</h2><blockquote>
+<p>任务总的运行时间。</p>
+</blockquote>
+<p><img src="https://mchen0607.github.io/images/image-20210415152238132.png" alt="image-20210415152238132"></p>
+<h2 id="2-4-DSC-Ⅰ-算法"><a href="#2-4-DSC-Ⅰ-算法" class="headerlink" title="2.4 DSC-Ⅰ 算法"></a>2.4 DSC-Ⅰ 算法</h2><p><img src="https://mchen0607.github.io/images/image-20210415134255303.png" alt="image-20210415134255303"></p>
+<blockquote>
+</blockquote>
+<h2 id="2-4-DSC-Ⅱ-算法"><a href="#2-4-DSC-Ⅱ-算法" class="headerlink" title="2.4 DSC-Ⅱ 算法"></a>2.4 DSC-Ⅱ 算法</h2><p><img src="https://mchen0607.github.io/images/image-20210415134705950.png" alt="image-20210415134705950"></p>
+<blockquote>
+<p>添加  partially free list 部分自由列表</p>
+</blockquote>
+<h1 id="3-HEFT-Performance-effective-and-low-complexity-task-scheduling-for-heterogeneous-computing"><a href="#3-HEFT-Performance-effective-and-low-complexity-task-scheduling-for-heterogeneous-computing" class="headerlink" title="3 HEFT:Performance-effective and low-complexity task scheduling for heterogeneous computing"></a>3 HEFT:Performance-effective and low-complexity task scheduling for heterogeneous computing</h1><p>Author: H. Topcuoglu , S. Hariri , Min-You Wu </p>
+<p>出处：TPDS:“PARALLEL AND DISTRIBUTED SYSTEMS.” A类 2002</p>
+<p>categories: 列表法</p>
+<blockquote>
+<p>用于异构计算的性能有效且低复杂度的任务调度,本文提出了两个算法，HEFT,CPOP；</p>
+<p>有向无环图（DAG）</p>
+<p>算法的核心步骤为两步：</p>
+<p>第一步，如何制定任务结点（task）的优先级。</p>
+<p>第二步，如何选取处理器的选择方式。</p>
+</blockquote>
+<h2 id="3-1-向上等级-upward-rank"><a href="#3-1-向上等级-upward-rank" class="headerlink" title="3.1 向上等级 upward rank"></a>3.1 向上等级 upward rank</h2><blockquote>
+<p>当前结点-&gt;退出结点（exit task）的需要时间。其中包含自己的平均执行时间。</p>
+</blockquote>
+<p>$rank_{u}(n_{i}) = \overline{w_{i}} + \max_{n_{j} \in succ(n_{i})} (\overline{c_{i, j}} + rank_{u}(n_{j}))$</p>
+<h2 id="3-2-向下等级-downward-rank"><a href="#3-2-向下等级-downward-rank" class="headerlink" title="3.2 向下等级 downward rank"></a>3.2 向下等级 downward rank</h2><blockquote>
+<p>起始结点（entry task）到当前结点的 最大时间(最快时间)（the longest distance).不包含当前结点的平均执行时间。</p>
+</blockquote>
+<p><img src="https://mchen0607.github.io/images/image-20210415152351122.png" alt="image-20210415152351122"></p>
+<h2 id="3-3-HEFT-Algorithm-：The-Heterogeneous-Earliest-Finish-Time-Algorithm"><a href="#3-3-HEFT-Algorithm-：The-Heterogeneous-Earliest-Finish-Time-Algorithm" class="headerlink" title="3.3 HEFT Algorithm ：The Heterogeneous-Earliest-Finish-Time Algorithm"></a>3.3 HEFT Algorithm ：The Heterogeneous-Earliest-Finish-Time Algorithm</h2><blockquote>
+<p>任务选取阶段：任务的优先级为： $priority=rank_u$</p>
+<p>处理器选取阶段：基于插入策略选取处理，使得选取任务在最早时间完成（EFT）。</p>
+</blockquote>
+<h3 id="3-3-1-算法描述"><a href="#3-3-1-算法描述" class="headerlink" title="3.3.1 算法描述"></a>3.3.1 算法描述</h3><p><img src="https://mchen0607.github.io/images/993206-fig-2-source-large.gif" alt="img"></p>
+<blockquote>
+<p>1：初始化任务的计算成本（平均执行时间），任务间通信成本</p>
+<p>2：从退出结点递归调用，得出每个任务（task）的向上等级值（$rank_u$）</p>
+<p>3：将$rank_u$按非递增排序的调度队列。</p>
+<p>4-9: 循环等待执行队列，直到等待队列为空：</p>
+<p>​                    选取队列中第一个任务。</p>
+<p>​                    计算出该任务在每个处理器上的最早完成时间，选取出最早完成时间的最小值的处理器，将该任务分配给该处理器执行。</p>
+</blockquote>
+<h3 id="3-3-2-时间复杂度：-O-v-2-p"><a href="#3-3-2-时间复杂度：-O-v-2-p" class="headerlink" title="3.3.2 时间复杂度：$O(v^2 p)$"></a>3.3.2 时间复杂度：$O(v^2 p)$</h3><h2 id="3-4-CPOP-Algorithm：The-Critical-Path-on-a-Processor-Algorithm"><a href="#3-4-CPOP-Algorithm：The-Critical-Path-on-a-Processor-Algorithm" class="headerlink" title="3.4 CPOP Algorithm：The Critical-Path-on-a-Processor Algorithm"></a>3.4 CPOP Algorithm：The Critical-Path-on-a-Processor Algorithm</h2><blockquote>
+<p>任务选取阶段：任务的优先级为： <strong>$priority=rank_u + rank_d$</strong></p>
+<p>根据任务的优先级（|CP|=priority($n_{entry}$)）得出关键路径的结点，加入到<strong>关键结点队列</strong></p>
+<p>计算关键结点路径在每个处理器的执行时间总和，选择总和最小值的处理器固定为关键路径结点处理器。</p>
+<p>处理器选取阶段：根据优先级排序顺序进行选取任务结点。</p>
+<p>任务结点 在 关键路径队列 中：</p>
+<p>​            关键路径专属处理器；</p>
+<p>不在：</p>
+<p>​            EFT循环遍历所有处理器，选择最早时间完成的处理器。</p>
+</blockquote>
+<h3 id="3-4-1-算法描述"><a href="#3-4-1-算法描述" class="headerlink" title="3.4.1 算法描述"></a>3.4.1 算法描述</h3><p><img src="https://mchen0607.github.io/images/993206-fig-2-source-large.gif" alt="Fig. 5. - The CPOP algorithm."></p>
+<blockquote>
+<p>1：初始化任务的计算成本（平均执行时间），任务间通信成本</p>
+<p>2：从退出结点递归调用，得出每个任务（task）的向上等级值（$rank_u$）</p>
+<p>3：从开始结点向下调用，得出每个任务（task）的向下等级值（$rank_d$）</p>
+<p>4：计算每个任务的优先级：$priority=rank_u+rank_d$</p>
+<p>5-12: 循环所有任务得出关键路径队列 $SET_{CP}$</p>
+<p>13：选取关键路径队列结点的最佳选择处理器。</p>
+<p>14-21：根据规则进行选取任务和任务对应处理器进行工作。</p>
+<p>规则：</p>
+<p>根据优先级队列（堆）进行选取任务结点。</p>
+<p>任务结点 在 关键路径队列 中：</p>
+<p>​            关键路径专属处理器；</p>
+<p>不在：</p>
+<p>​            EFT循环遍历所有处理器，选择最早时间完成的处理器。</p>
+<p>更新优先级队列，加入执行任务的后继结点中的ready tasks(准备任务)</p>
+</blockquote>
+<p>3.4.2 时间复杂度：$O(e \cdot q  )$</p>
+<h1 id="4-PEFT-List-Scheduling-Algorithm-for-Heterogeneous-Systems-by-an-Optimistic-Cost-Table"><a href="#4-PEFT-List-Scheduling-Algorithm-for-Heterogeneous-Systems-by-an-Optimistic-Cost-Table" class="headerlink" title="4 PEFT: List Scheduling Algorithm for Heterogeneous Systems by an Optimistic Cost Table"></a>4 PEFT: List Scheduling Algorithm for Heterogeneous Systems by an Optimistic Cost Table</h1><p>Author：Hamid Arabnejad and Jorge G. Barbosa </p>
+<p>出处：TPDS:“PARALLEL AND DISTRIBUTED SYSTEMS.” A类  2014</p>
+<p>categories: 列表法</p>
+<h2 id="4-1-Optimistic-Cost-Table-乐观成本表"><a href="#4-1-Optimistic-Cost-Table-乐观成本表" class="headerlink" title="4.1 Optimistic Cost Table 乐观成本表"></a>4.1 Optimistic Cost Table 乐观成本表</h2><blockquote>
+<p>主要用于考虑后继结点的预计最早完成时间。</p>
+<p><img src="https://mchen0607.github.io/images/image-20210415152303819.png" alt="image-20210415152303819"></p>
+</blockquote>
+<blockquote>
+<p>计算出每个任务的$rank_{ock}$</p>
+</blockquote>
+<p><img src="https://mchen0607.github.io/images/image-20210415152321632.png" alt="image-20210415152321632"></p>
+<h2 id="4-2-PEFT-Algorithm-：Predict-Earliest-Finish-Time-Algorithm"><a href="#4-2-PEFT-Algorithm-：Predict-Earliest-Finish-Time-Algorithm" class="headerlink" title="4.2 PEFT  Algorithm ：Predict Earliest Finish Time Algorithm"></a>4.2 PEFT  Algorithm ：Predict Earliest Finish Time Algorithm</h2><h3 id="4-2-1-算法描述"><a href="#4-2-1-算法描述" class="headerlink" title="4.2.1 算法描述"></a>4.2.1 算法描述</h3><blockquote>
+<p>Algorithm 1. The PEFT Algorithm.<br>1: Compute OCT table and $rank_{oct}$for all tasks<br>2: Create Empty list ready-list and put $n_{entry}$ as initial task<br>3: while ready-list is NOT Empty do<br>4:          $n_i\leftarrow$   the task with highest $rank_{oct}$ from ready-list<br>5:         for all processor $p_j$ in the processor-set P do<br>6:                     Compute $EFT(n_i,p_j)$ value using insertion-based scheduling policy<br>7:                     $O_{EFT}(n_i,P_j)=EFT(n_i,p_j)+OCT(t_i,p_k)$<br>8:         end for<br>9:         Assign task $n_i$ to the processor $p_j$ that minimize    $O_{EFT}$ of task $n_i$<br>10:      Update ready-list<br>11: end while</p>
+</blockquote>
+<blockquote>
+<p>1：计算出每个任务的$rank_{oct}$</p>
+<p>2：初始化就绪队列，将entry 任务加入到就绪队列</p>
+<p>3-11：循环遍历就绪队列，直到就绪队列为空：</p>
+<p>​            从就绪队列中选取$rank_{oct}$最大的就绪任务</p>
+<p>​            计算任务在每个处理器上的EFT,进而计算$O_{EFT}(n_i,p_j)$,选取计算值最小的处理器。（注：计算EFT时，前驱结点已固定到处理器上。）</p>
+<p>​            更新就绪队列。</p>
+</blockquote>
+<h3 id="4-2-2-时间复杂度-O-v-2-p"><a href="#4-2-2-时间复杂度-O-v-2-p" class="headerlink" title="4.2.2 时间复杂度 $O(v^2 p)$"></a>4.2.2 时间复杂度 $O(v^2 p)$</h3></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-14T02:17:24.000Z" title="2021/4/14 上午10:17:24">2021-04-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-04-14T02:22:42.000Z" title="2021/4/14 上午10:22:42">2021-04-14</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span><span class="level-item">a minute read (About 181 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/14/%E5%89%8D%E7%BC%80%E6%A0%91/">前缀树</a></h1><div class="content"><h1 id="前缀树"><a href="#前缀树" class="headerlink" title="前缀树"></a>前缀树</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Trie</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Trie[] subNodes;<span class="comment">//子结点</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> isEnd;<span class="comment">//是否为字符串最后一个字符</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 初始化前缀树</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Trie</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.subNodes = <span class="keyword">new</span> Trie[<span class="number">26</span>];<span class="comment">//26个字符</span></span><br><span class="line">        <span class="keyword">this</span>.isEnd = <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 插入字符到树中。</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(String word)</span> </span>&#123;</span><br><span class="line">        Trie node = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; word.length(); i++) &#123;</span><br><span class="line">            <span class="keyword">char</span> c = word.charAt(i);</span><br><span class="line">            <span class="keyword">int</span> index = c - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">            <span class="keyword">if</span> (node.subNodes[index] == <span class="keyword">null</span>) &#123;</span><br><span class="line">                node.subNodes[index] = <span class="keyword">new</span> Trie();</span><br><span class="line">            &#125;</span><br><span class="line">            node = node.subNodes[index];</span><br><span class="line">        &#125;</span><br><span class="line">        node.isEnd = <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 返回单词是否在trie中。</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">search</span><span class="params">(String word)</span> </span>&#123;</span><br><span class="line">        Trie node = searchPrefix(word);</span><br><span class="line">        <span class="keyword">return</span> node != <span class="keyword">null</span> &amp;&amp; node.isEnd;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 返回在trie中是否有以给定前缀开头的单词。 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">startsWith</span><span class="params">(String prefix)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> searchPrefix(prefix) != <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Trie <span class="title">searchPrefix</span><span class="params">(String prefix)</span> </span>&#123;</span><br><span class="line">        Trie node = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; prefix.length(); i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> index = prefix.charAt(i) - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">            <span class="keyword">if</span> (node.subNodes[index] == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            node = node.subNodes[index];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> node;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-11T11:24:13.000Z" title="2021/4/11 下午7:24:13">2021-04-11</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:28:52.000Z" title="2021/6/8 上午11:28:52">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 287 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/11/16-%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/">剑指 Offer 16. 数值的整数次方【快速幂】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>实现 pow(x, n) ，即计算 x 的 n 次幂函数（即，xn）。不得使用库函数，同时不需要考虑大数问题。</p>
+<p><strong>示例 1：</strong></p>
+<blockquote>
+<p>输入：x = 2.00000, n = 10<br>输出：1024.00000</p>
+</blockquote>
+<p><strong>示例 2：</strong></p>
+<blockquote>
+<p>输入：x = 2.10000, n = 3<br>输出：9.26100</p>
+</blockquote>
+<p><strong>示例 3：</strong></p>
+<blockquote>
+<p>输入：x = 2.00000, n = -2<br>输出：0.25000<br>解释：2-2 = 1/22 = 1/4 = 0.25</p>
+</blockquote>
+<p><strong>提示：</strong>【有问题】</p>
+<ul>
+<li>-100.0 &lt; x &lt; 100.0</li>
+<li>-231 &lt;= n &lt;= 231-1</li>
+<li>-104 &lt;= xn &lt;= 104</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/2021/04/11/16-%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-11T11:10:25.000Z" title="2021/4/11 下午7:10:25">2021-04-11</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:28:50.000Z" title="2021/6/8 上午11:28:50">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">3 minutes read (About 380 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/11/15-%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/">剑指 Offer 15. 二进制中1的个数【位运算】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>请实现一个函数，输入一个整数（以二进制串形式），输出该数二进制表示中 1 的个数。例如，把 9 表示成二进制是 1001，有 2 位是 1。因此，如果输入 9，则该函数输出 2。</p>
+<p><strong>示例 1：</strong></p>
+<blockquote>
+<p>输入：00000000000000000000000000001011<br>输出：3<br>解释：输入的二进制串 00000000000000000000000000001011 中，共有三位为 ‘1’。</p>
+</blockquote>
+<p><strong>示例 2：</strong></p>
+<blockquote>
+<p>输入：00000000000000000000000010000000<br>输出：1<br>解释：输入的二进制串 00000000000000000000000010000000 中，共有一位为 ‘1’。</p>
+</blockquote>
+<p><strong>示例 3：</strong></p>
+<blockquote>
+<p>输入：11111111111111111111111111111101<br>输出：31<br>解释：输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 ‘1’。</p>
+</blockquote>
+<p><strong>提示：</strong></p>
+<blockquote>
+<p>输入必须是长度为 32 的 二进制串 。</p>
+</blockquote></div><a class="article-more button is-small is-size-7" href="/2021/04/11/15-%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-11T09:08:52.000Z" title="2021/4/11 下午5:08:52">2021-04-11</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:28:48.000Z" title="2021/6/8 上午11:28:48">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">3 minutes read (About 395 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/11/14-%E2%85%A1-%E5%89%AA%E7%BB%B3%E5%AD%90%E2%85%A1/">剑指 Offer14-Ⅱ 剪绳子Ⅱ【快速幂、数学】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为 k[0],k[1]…k[m - 1] 。请问 k[0]<em>k[1]</em>…*k[m - 1] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。</p>
+<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
+<p><strong>示例 1：</strong></p>
+<blockquote>
+<p>输入: 2<br>输出: 1<br>解释: 2 = 1 + 1, 1 × 1 = 1</p>
+</blockquote>
+<p><strong>示例 2:</strong></p>
+<blockquote>
+<p>输入: 10<br>输出: 36<br>解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36</p>
+</blockquote>
+<p><strong>提示：</strong></p>
+<ul>
+<li>2 &lt;= n &lt;= 1000</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/2021/04/11/14-%E2%85%A1-%E5%89%AA%E7%BB%B3%E5%AD%90%E2%85%A1/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-11T09:00:20.000Z" title="2021/4/11 下午5:00:20">2021-04-11</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:28:44.000Z" title="2021/6/8 上午11:28:44">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 368 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/11/14-%E2%85%A0-%E5%89%AA%E7%BB%B3%E5%AD%90/">剑指 Offer14-Ⅰ 剪绳子【数学】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为 k[0],k[1]…k[m-1] 。请问 k[0]<em>k[1]</em>…*k[m-1] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。</p>
+<p><strong>示例 1：</strong></p>
+<blockquote>
+<p>输入: 2<br>输出: 1<br>解释: 2 = 1 + 1, 1 × 1 = 1</p>
+</blockquote>
+<p><strong>示例 2:</strong></p>
+<blockquote>
+<p>输入: 10<br>输出: 36<br>解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36</p>
+</blockquote>
+<p><strong>提示：</strong></p>
+<blockquote>
+<p><strong>2 &lt;= n &lt;= 58</strong></p>
+</blockquote></div><a class="article-more button is-small is-size-7" href="/2021/04/11/14-%E2%85%A0-%E5%89%AA%E7%BB%B3%E5%AD%90/#more">Read more</a></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/6/">Previous</a></div><div class="pagination-next"><a href="/page/8/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/6/">6</a></li><li><a class="pagination-link is-current" href="/page/7/">7</a></li><li><a class="pagination-link" href="/page/8/">8</a></li><li><a class="pagination-link" href="/page/9/">9</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/images/Avatar.jpg" alt="MChen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">MChen</p><p class="is-size-6 is-block">尽人事听天命，越努力越幸运&amp;&amp;爱在华师大</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shanghai China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">83</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">3</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">24</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/MChen0607" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/MChen0607"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="/"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="/m"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%89%91%E6%8C%87offer/"><span class="level-start"><span class="level-item">剑指offer</span></span><span class="level-end"><span class="level-item tag">75</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="level-start"><span class="level-item">数据结构</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B0%83%E5%BA%A6/"><span class="level-start"><span class="level-item">调度</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Math/"><span class="tag">Math</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"><span class="tag">二分查找</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"><span class="tag">位运算</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/"><span class="tag">分治算法</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%BC%80%E6%A0%91/"><span class="tag">前缀树</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"><span class="tag">动态规划</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"><span class="tag">双指针</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8F%98%E5%8A%A8/"><span class="tag">变动</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"><span class="tag">哈希表</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"><span class="tag">字符串</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"><span class="tag">归并排序</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"><span class="tag">快速幂</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8E%92%E5%BA%8F/"><span class="tag">排序</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"><span class="tag">排序算法</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%B0%E7%BB%84/"><span class="tag">数组</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91/"><span class="tag">斐波那契</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9C%89%E5%BE%85%E5%AE%8C%E5%96%84/"><span class="tag">有待完善</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A0%88/"><span class="tag">栈</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A0%91/"><span class="tag">树</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"><span class="tag">深度优先搜索</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%BF%AD%E4%BB%A3/"><span class="tag">迭代</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%80%92%E5%BD%92/"><span class="tag">递归</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%93%BE%E8%A1%A8/"><span class="tag">链表</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%98%9F%E5%88%97/"><span class="tag">队列</span><span class="tag">1</span></a></div></div></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-08T03:33:21.000Z">2021-06-08</time></p><p class="title"><a href="/2021/06/08/%E5%89%91%E6%8C%87offer42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/">剑指offer42 连续子数组的最大和</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T08:24:44.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer68-%E2%85%A1-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/">剑指offer68-Ⅱ 二叉树的最近公共祖先【哈希表、递归+DFS】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T07:41:32.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer68-%E2%85%A0-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/">剑指offer68-Ⅰ 二叉搜索树的最近公共祖先【二叉搜索树性质】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T07:28:47.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer67-%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/">剑指offer67 把字符串转换成整数【字符串】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T07:20:34.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer66-%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/">剑指offer66 构建乘积数组【辅助数组】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">June 2021</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/05/"><span class="level-start"><span class="level-item">May 2021</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/04/"><span class="level-start"><span class="level-item">April 2021</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">March 2021</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://wudaxia4410.github.io/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Wudaxia</span></span><span class="level-right"><span class="level-item tag">wudaxia4410.github.io</span></span></a></li><li><a class="level is-mobile" href="https://www.guanyuqian.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">G-Blog</span></span><span class="level-right"><span class="level-item tag">www.guanyuqian.com</span></span></a></li><li><a class="level is-mobile" href="http://rrazz.love/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">妄越</span></span><span class="level-right"><span class="level-item tag">rrazz.love</span></span></a></li><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">icarus</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a><p class="is-size-7"><span>&copy; 2021 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

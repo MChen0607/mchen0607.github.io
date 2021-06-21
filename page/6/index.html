@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Hexo"><meta property="og:url" content="http://example.com/"><meta property="og:site_name" content="Hexo"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:author" content="John Doe"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com"},"headline":"Hexo","image":["http://example.com/img/og_image.png"],"author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"http://example.com/img/logo.svg"}},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-05-26T04:01:36.000Z" title="2021/5/26 下午12:01:36">2021-05-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-05-26T05:03:08.000Z" title="2021/5/26 下午1:03:08">2021-05-26</time></span><span class="level-item">2 minutes read (About 301 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/05/26/NC35-%E6%9C%80%E5%B0%8F%E7%BC%96%E8%BE%91%E4%BB%A3%E4%BB%B7/">NC35 最小编辑代价</a></h1><div class="content"><h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>给定两个字符串str1和str2，再给定三个整数ic，dc和rc，分别代表插入、删除和替换一个字符的代价，请输出将str1编辑成str2的最小代价。</p>
+<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;abc&quot;,&quot;adc&quot;,5,3,2</span><br></pre></td></tr></table></figure>
+
+<p>返回值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h3><p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;abc&quot;,&quot;adc&quot;,5,3,100</span><br></pre></td></tr></table></figure>
+
+<p>返回值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">8</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h2><p>$1 \leq |str_1|, |str_2| \leq 50001≤∣str1∣,∣str2∣≤5000$<br>$1 \leq ic, dc, rc \leq 100001≤ic,dc,rc≤10000$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * min edit cost</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> str1 string字符串 the string</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> str2 string字符串 the string</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> ic int整型 insert cost</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> dc int整型 delete cost</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> rc int整型 replace cost</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> int整型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minEditCost</span> <span class="params">(String str1, String str2, <span class="keyword">int</span> ic, <span class="keyword">int</span> dc, <span class="keyword">int</span> rc)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// write code here</span></span><br><span class="line">        <span class="keyword">int</span> n = str1.length();</span><br><span class="line">        <span class="keyword">int</span> m = str2.length();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 有一个字符串为空串</span></span><br><span class="line">        <span class="keyword">if</span> (n * m == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> Math.max(n,m)*Math.min(dc,rc);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// DP 数组</span></span><br><span class="line">        <span class="keyword">int</span>[][] D = <span class="keyword">new</span> <span class="keyword">int</span>[n + <span class="number">1</span>][m + <span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 边界状态初始化</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n + <span class="number">1</span>; i++) &#123;</span><br><span class="line">            D[i][<span class="number">0</span>] = i*dc;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m + <span class="number">1</span>; j++) &#123;</span><br><span class="line">            D[<span class="number">0</span>][j] = j*ic;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 计算所有 DP 值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n + <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; m + <span class="number">1</span>; j++) &#123;</span><br><span class="line">                <span class="keyword">int</span> left = D[i - <span class="number">1</span>][j] + dc;</span><br><span class="line">                <span class="keyword">int</span> down = D[i][j - <span class="number">1</span>] + ic;</span><br><span class="line">                <span class="keyword">int</span> left_down = D[i - <span class="number">1</span>][j - <span class="number">1</span>];</span><br><span class="line">                <span class="keyword">if</span> (str1.charAt(i - <span class="number">1</span>) != str2.charAt(j - <span class="number">1</span>)) &#123;</span><br><span class="line">                    left_down += rc;</span><br><span class="line">                &#125;</span><br><span class="line">                D[i][j] = Math.min(left, Math.min(down, left_down));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> D[n][m];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-05-26T03:50:23.000Z" title="2021/5/26 上午11:50:23">2021-05-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-05-26T03:51:20.000Z" title="2021/5/26 上午11:51:20">2021-05-26</time></span><span class="level-item">2 minutes read (About 370 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/05/26/Leetcode72-%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/">Leetcode72 编辑距离</a></h1><div class="content"><h4 id="72-编辑距离"><a href="#72-编辑距离" class="headerlink" title="72. 编辑距离"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/edit-distance/">72. 编辑距离</a></h4><p>给你两个单词 <code>word1</code> 和 <code>word2</code>，请你计算出将 <code>word1</code> 转换成 <code>word2</code> 所使用的最少操作数 。</p>
+<p>你可以对一个单词进行如下三种操作：</p>
+<ul>
+<li>插入一个字符</li>
+<li>删除一个字符</li>
+<li>替换一个字符</li>
+</ul>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入：word1 = &quot;horse&quot;, word2 = &quot;ros&quot;</span><br><span class="line">输出：3</span><br><span class="line">解释：</span><br><span class="line">horse -&gt; rorse (将 &#x27;h&#x27; 替换为 &#x27;r&#x27;)</span><br><span class="line">rorse -&gt; rose (删除 &#x27;r&#x27;)</span><br><span class="line">rose -&gt; ros (删除 &#x27;e&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">输入：word1 = &quot;intention&quot;, word2 = &quot;execution&quot;</span><br><span class="line">输出：5</span><br><span class="line">解释：</span><br><span class="line">intention -&gt; inention (删除 &#x27;t&#x27;)</span><br><span class="line">inention -&gt; enention (将 &#x27;i&#x27; 替换为 &#x27;e&#x27;)</span><br><span class="line">enention -&gt; exention (将 &#x27;n&#x27; 替换为 &#x27;x&#x27;)</span><br><span class="line">exention -&gt; exection (将 &#x27;n&#x27; 替换为 &#x27;c&#x27;)</span><br><span class="line">exection -&gt; execution (插入 &#x27;u&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>0 &lt;= word1.length, word2.length &lt;= 500</code></li>
+<li><code>word1</code> 和 <code>word2</code> 由小写英文字母组成</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minDistance</span><span class="params">(String word1, String word2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = word1.length();</span><br><span class="line">        <span class="keyword">int</span> m = word2.length();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 有一个字符串为空串</span></span><br><span class="line">        <span class="keyword">if</span> (n * m == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> n + m;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// DP 数组</span></span><br><span class="line">        <span class="keyword">int</span>[][] D = <span class="keyword">new</span> <span class="keyword">int</span>[n + <span class="number">1</span>][m + <span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 边界状态初始化</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n + <span class="number">1</span>; i++) &#123;</span><br><span class="line">            D[i][<span class="number">0</span>] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m + <span class="number">1</span>; j++) &#123;</span><br><span class="line">            D[<span class="number">0</span>][j] = j;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 计算所有 DP 值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n + <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; m + <span class="number">1</span>; j++) &#123;</span><br><span class="line">                <span class="keyword">int</span> left = D[i - <span class="number">1</span>][j] + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> down = D[i][j - <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> left_down = D[i - <span class="number">1</span>][j - <span class="number">1</span>];</span><br><span class="line">                <span class="keyword">if</span> (word1.charAt(i - <span class="number">1</span>) != word2.charAt(j - <span class="number">1</span>)) &#123;</span><br><span class="line">                    left_down += <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                D[i][j] = Math.min(left, Math.min(down, left_down));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> D[n][m];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">作者：LeetCode-Solution</span><br><span class="line">链接：https:<span class="comment">//leetcode-cn.com/problems/edit-distance/solution/bian-ji-ju-chi-by-leetcode-solution/</span></span><br><span class="line">来源：力扣（LeetCode）</span><br><span class="line">著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-05-26T03:16:43.000Z" title="2021/5/26 上午11:16:43">2021-05-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-05-26T03:23:10.000Z" title="2021/5/26 上午11:23:10">2021-05-26</time></span><span class="level-item">4 minutes read (About 601 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/05/26/LFU%E7%BC%93%E5%AD%98%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1/">LFU缓存结构设计</a></h1><div class="content"><h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>一个缓存结构需要实现如下功能。</p>
+<ul>
+<li>set(key, value)：将记录(key, value)插入该结构</li>
+<li>get(key)：返回key对应的value值</li>
+</ul>
+<p>但是缓存结构中最多放K条记录，如果新的第K+1条记录要加入，就需要根据策略删掉一条记录，然后才能把新记录加入。这个策略为：在缓存结构的K条记录中，哪一个key从进入缓存结构的时刻开始，被调用set或者get的次数最少，就删掉这个key的记录；</p>
+<p>如果调用次数最少的key有多个，上次调用发生最早的key被删除</p>
+<p>这就是LFU缓存替换算法。实现这个结构，K作为参数给出</p>
+<p>[要求]</p>
+<p>set和get方法的时间复杂度为O(1)</p>
+<p>若opt=1，接下来两个整数x, y，表示set(x, y)<br>若opt=2，接下来一个整数x，表示get(x)，若x未出现过或已被移除，则返回-1</p>
+<p>对于每个操作2，输出一个答案</p>
+<h2 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h2><p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[[1,1,1],[1,2,2],[1,3,2],[1,2,4],[1,3,5],[2,2],[1,4,4],[2,1]],3</span><br></pre></td></tr></table></figure>
+
+<p>返回值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[4,-1]</span><br></pre></td></tr></table></figure>
+
+<p>说明：在执行”1 2 4”后，”1 1 1”被删除。因此第二次询问的答案为-1</p>
+<h2 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h2><p>$1 \leq k \leq n \leq 10^5$ </p>
+<p> $-2 \times 10^9 \leq x,y \leq 2 \times 10^9$</p>
+<pre><code class="JAVA">import java.util.*;
+
+
+public class Solution &#123;
+    /**
+     * lfu design
+     * @param operators int整型二维数组 ops
+     * @param k int整型 the k
+     * @return int整型一维数组
+     */
+    class LFUCache&#123;
+        class Node&#123;
+            int k;
+            int val;
+            int freq;
+            public Node()&#123;&#125;
+            public Node(int k, int val, int freq)&#123;
+                this.k = k;
+                this.val = val;
+                this.freq = freq;
+            &#125;
+        &#125;
+        private int capacity;
+        private Map&lt;Integer, Node&gt; map = new HashMap&lt;&gt;();
+        private Map&lt;Integer, LinkedList&lt;Node&gt;&gt; freqMap = new HashMap&lt;&gt;();
+        private int minFreq;
+        public LFUCache(int capacity)&#123;
+            this.capacity = capacity;
+            this.minFreq = 1;
+        &#125;
+        public void update(Node node)&#123;
+            LinkedList&lt;Node&gt; list = freqMap.get(node.freq);
+            list.remove(node);
+            if (list.isEmpty() &amp;&amp; node.freq == minFreq)&#123;
+                minFreq++;
+            &#125;
+            node.freq++;
+            if (!freqMap.containsKey(node.freq))&#123;
+                freqMap.put(node.freq, new LinkedList&lt;&gt;());
+            &#125;
+            freqMap.get(node.freq).addLast(node);
+           
+        &#125;
+        public int get(int k)&#123;
+            if (!map.containsKey(k))&#123;
+                return -1;
+            &#125;
+            Node node = map.get(k);
+            update(node);
+            return node.val;
+        &#125;
+        public void put(int k, int val)&#123;
+            if (map.containsKey(k))&#123;
+                Node node = map.get(k);
+                node.val = val;
+                update(node);
+                map.put(k, node);
+                return;
+            &#125;
+            if (map.size() == capacity)&#123;
+                Node node = freqMap.get(minFreq).removeFirst();
+                map.remove(node.k);
+            &#125;
+            Node node = new Node(k, val, 1);
+            map.put(k, node);
+            if (!freqMap.containsKey(1))&#123;
+                freqMap.put(1, new LinkedList&lt;&gt;());
+            &#125;
+            freqMap.get(1).addLast(node);
+            minFreq = 1;
+        &#125;
+    &#125;
+     
+    public int[] LFU (int[][] operators, int k) &#123;
+        // write code here
+        LFUCache cache = new LFUCache(k);
+        ArrayList&lt;Integer&gt; res = new ArrayList&lt;&gt;();
+        for (int i = 0; i &lt; operators.length; i++)&#123;
+            if (operators[i][0] == 1)&#123;
+                cache.put(operators[i][1], operators[i][2]);
+            &#125;else&#123;
+                res.add(cache.get(operators[i][1]));
+            &#125;
+        &#125;
+        int[] ans = new int[res.size()];
+        for (int i = 0; i &lt; ans.length; i++)&#123;
+            ans[i] = res.get(i);
+        &#125;
+        return ans;
+    &#125;
+&#125;
+</code></pre>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-19T12:40:47.000Z" title="2021/4/19 下午8:40:47">2021-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:40.000Z" title="2021/6/8 上午11:29:40">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 245 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/19/28-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/">剑指 Offer 28. 对称的二叉树【递归】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。</p>
+<p>例如，二叉树 [1,2,2,3,4,4,3] 是对称的。</p>
+<p>​                      <code>  1</code> </p>
+<p>​                    <code>/ \</code></p>
+<p>​                 <code>2    2</code></p>
+<p>​               <code> / \  / \</code></p>
+<p>​             <code>3  4  4  3</code><br>但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:</p>
+<p>​                      <code>  1</code> </p>
+<p>​                    <code>/ \</code></p>
+<p>​                 <code>2    2</code></p>
+<p>​                   <code>   \     \</code></p>
+<p>​                       <code>  3    3</code></p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：root = [1,2,2,3,4,4,3]</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：root = [1,2,2,null,3,null,3]</span><br><span class="line">输出：false</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/2021/04/19/28-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-19T12:33:32.000Z" title="2021/4/19 下午8:33:32">2021-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:36.000Z" title="2021/6/8 上午11:29:36">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 290 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/19/27-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/">剑指 Offer 27. 二叉树的镜像【递归、迭代】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>请完成一个函数，输入一个二叉树，该函数输出它的镜像。</p>
+<p>例如输入：</p>
+<p>​           <code>  4</code></p>
+<p>​        <code>/  \</code></p>
+<p>​      <code> 2    7</code></p>
+<p>   <code>/ \   / \</code></p>
+<p> <code>1  3   6  9</code><br>镜像输出：</p>
+<p>​           <code>  4</code></p>
+<p>​        <code>/  \</code></p>
+<p>​      <code> 7    2</code></p>
+<p>   <code>/ \   / \</code></p>
+<p> <code>9  6   3  1</code></p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：root = [4,2,7,1,3,6,9]</span><br><span class="line">输出：[4,7,2,9,6,3,1]</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/2021/04/19/27-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-19T12:17:40.000Z" title="2021/4/19 下午8:17:40">2021-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:34.000Z" title="2021/6/8 上午11:29:34">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">3 minutes read (About 478 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/19/26-%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/">剑指 Offer 26. 树的子结构【迭代】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)</p>
+<p>B是A的子结构， 即 A中有出现和B相同的结构和节点值。</p>
+<p>例如:<br>给定的树 A:</p>
+<p>​       <code>3  </code></p>
+<p>​     <code>/ \  </code></p>
+<p>​    <code>4  5 </code></p>
+<p>  <code>/ \ </code></p>
+<p><code>1  2</code><br>给定的树 B：</p>
+<p>   <code> 4 </code></p>
+<p>  <code>/</code></p>
+<p><code> 1</code><br>返回 true，因为 B 与 A 的一个子树拥有相同的结构和节点值。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：A = [1,2,3], B = [3,1]</span><br><span class="line">输出：false</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：A = [3,4,5,1,2], B = [4,1]</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure>
+
+<p><strong>限制：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 &lt;= 节点个数 &lt;= 10000</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/2021/04/19/26-%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-19T12:11:45.000Z" title="2021/4/19 下午8:11:45">2021-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:32.000Z" title="2021/6/8 上午11:29:32">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 318 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/19/25-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E7%9A%84%E9%93%BE%E8%A1%A8/">剑指 Offer 25. 合并两个排序的链表【递归、迭代】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。</p>
+<p><strong>示例1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4</span><br><span class="line">输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</span><br></pre></td></tr></table></figure>
+
+<p><strong>限制：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 &lt;= 链表长度 &lt;= 1000</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/2021/04/19/25-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E7%9A%84%E9%93%BE%E8%A1%A8/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-19T12:02:36.000Z" title="2021/4/19 下午8:02:36">2021-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:28.000Z" title="2021/6/8 上午11:29:28">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 287 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/19/24-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/">剑指 Offer 24. 反转链表【递归、迭代】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL</span><br><span class="line">输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</span><br></pre></td></tr></table></figure>
+
+<p><strong>限制：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 &lt;= 节点个数 &lt;= 5000</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/2021/04/19/24-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-19T11:53:52.000Z" title="2021/4/19 下午7:53:52">2021-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:24.000Z" title="2021/6/8 上午11:29:24">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">3 minutes read (About 404 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/19/22-%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/">剑指 Offer 22. 链表中倒数第k个节点【快慢指针】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。</p>
+<p>例如，一个链表有 <code>6</code> 个节点，从头节点开始，它们的值依次是 <code>1、2、3、4、5、6</code>。这个链表的倒数第 <code>3</code> 个节点是值为 <code>4</code> 的节点。</p>
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 k = 2.</span><br><span class="line"></span><br><span class="line">返回链表 4-&gt;5.</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/2021/04/19/22-%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/#more">Read more</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-04-19T11:45:42.000Z" title="2021/4/19 下午7:45:42">2021-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-08T03:29:20.000Z" title="2021/6/8 上午11:29:20">2021-06-08</time></span><span class="level-item"><a class="link-muted" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></span><span class="level-item">2 minutes read (About 252 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/04/19/21-%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/">剑指 Offer 21. 调整数组顺序使奇数位于偶数前面【双指针】</a></h1><div class="content"><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数位于数组的前半部分，所有偶数位于数组的后半部分。</p>
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [1,2,3,4]</span><br><span class="line">输出：[1,3,2,4] </span><br><span class="line">注：[3,1,2,4] 也是正确的答案之一。</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ol>
+<li><code>0 &lt;= nums.length &lt;= 50000</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 10000</code></li>
+</ol></div><a class="article-more button is-small is-size-7" href="/2021/04/19/21-%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/#more">Read more</a></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/5/">Previous</a></div><div class="pagination-next"><a href="/page/7/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/5/">5</a></li><li><a class="pagination-link is-current" href="/page/6/">6</a></li><li><a class="pagination-link" href="/page/7/">7</a></li><li><a class="pagination-link" href="/page/8/">8</a></li><li><a class="pagination-link" href="/page/9/">9</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/images/Avatar.jpg" alt="MChen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">MChen</p><p class="is-size-6 is-block">尽人事听天命，越努力越幸运&amp;&amp;爱在华师大</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shanghai China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">83</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">3</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">24</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/MChen0607" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/MChen0607"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="/"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="/"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="/m"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%89%91%E6%8C%87offer/"><span class="level-start"><span class="level-item">剑指offer</span></span><span class="level-end"><span class="level-item tag">75</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="level-start"><span class="level-item">数据结构</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B0%83%E5%BA%A6/"><span class="level-start"><span class="level-item">调度</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Math/"><span class="tag">Math</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"><span class="tag">二分查找</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"><span class="tag">位运算</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/"><span class="tag">分治算法</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%BC%80%E6%A0%91/"><span class="tag">前缀树</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"><span class="tag">动态规划</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"><span class="tag">双指针</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8F%98%E5%8A%A8/"><span class="tag">变动</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"><span class="tag">哈希表</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"><span class="tag">字符串</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"><span class="tag">归并排序</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"><span class="tag">快速幂</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8E%92%E5%BA%8F/"><span class="tag">排序</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"><span class="tag">排序算法</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%B0%E7%BB%84/"><span class="tag">数组</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91/"><span class="tag">斐波那契</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9C%89%E5%BE%85%E5%AE%8C%E5%96%84/"><span class="tag">有待完善</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A0%88/"><span class="tag">栈</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A0%91/"><span class="tag">树</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"><span class="tag">深度优先搜索</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%BF%AD%E4%BB%A3/"><span class="tag">迭代</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%80%92%E5%BD%92/"><span class="tag">递归</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%93%BE%E8%A1%A8/"><span class="tag">链表</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%98%9F%E5%88%97/"><span class="tag">队列</span><span class="tag">1</span></a></div></div></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-08T03:33:21.000Z">2021-06-08</time></p><p class="title"><a href="/2021/06/08/%E5%89%91%E6%8C%87offer42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/">剑指offer42 连续子数组的最大和</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T08:24:44.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer68-%E2%85%A1-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/">剑指offer68-Ⅱ 二叉树的最近公共祖先【哈希表、递归+DFS】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T07:41:32.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer68-%E2%85%A0-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/">剑指offer68-Ⅰ 二叉搜索树的最近公共祖先【二叉搜索树性质】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T07:28:47.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer67-%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/">剑指offer67 把字符串转换成整数【字符串】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-06T07:20:34.000Z">2021-06-06</time></p><p class="title"><a href="/2021/06/06/%E5%89%91%E6%8C%87offer66-%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/">剑指offer66 构建乘积数组【辅助数组】</a></p><p class="categories"><a href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">June 2021</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/05/"><span class="level-start"><span class="level-item">May 2021</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/04/"><span class="level-start"><span class="level-item">April 2021</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">March 2021</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://wudaxia4410.github.io/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Wudaxia</span></span><span class="level-right"><span class="level-item tag">wudaxia4410.github.io</span></span></a></li><li><a class="level is-mobile" href="https://www.guanyuqian.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">G-Blog</span></span><span class="level-right"><span class="level-item tag">www.guanyuqian.com</span></span></a></li><li><a class="level is-mobile" href="http://rrazz.love/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">妄越</span></span><span class="level-right"><span class="level-item tag">rrazz.love</span></span></a></li><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">icarus</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a><p class="is-size-7"><span>&copy; 2021 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
